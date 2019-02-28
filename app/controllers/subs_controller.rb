@@ -55,15 +55,23 @@ class SubsController < ApplicationController
   before_action :find_sub, only: [:show, :update, :edit, :destroy]
   # before_action :find_sub, except: [:index, :new, :create]
 
+  #get
   def index
     @subs = Sub.all
+    # render index.html
   end
 
+  #get
   def show
+    # render show.html.erb
   end
 
+  #get
   def new
     @sub = Sub.new
+    # render new.html.erb
+
+    render partial: 'subs/form'
   end
 
   def create
@@ -76,7 +84,11 @@ class SubsController < ApplicationController
     end
   end
 
+  #get
   def edit
+    # render edit.html.erb
+
+    render partial: 'subs/form'
   end
 
   def update
