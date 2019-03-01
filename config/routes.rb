@@ -6,6 +6,10 @@ Rails.application.routes.draw do
     resources :topics
   end
 
+  resources :topics do
+    resources :comments
+  end
+
   # /subs/:sub_id/topics/:id
   # sub_id 7
   # topic_id

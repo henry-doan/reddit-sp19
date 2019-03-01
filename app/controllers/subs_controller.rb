@@ -3,6 +3,7 @@ class SubsController < ApplicationController
   # Controller / routes directing traffic, actions
   # Models all logic on the table / record
 
+  # Flow Routes/ Controller/ views/ model / database
   # Skinny Controllers / Fat Models
 
     # Read / GET
